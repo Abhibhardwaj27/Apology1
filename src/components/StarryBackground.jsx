@@ -28,7 +28,7 @@ export default function StarryBackground() {
       {stars.map((star) => (
         <motion.div
           key={star.id}
-          className="absolute bg-pink-200 rounded-full"
+          className="absolute bg-emerald-200 rounded-full"
           style={{
             left: `${star.x}%`,
             top: `${star.y}%`,

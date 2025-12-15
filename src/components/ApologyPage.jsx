@@ -49,7 +49,7 @@ export default function ApologyPage({ setCurrentPage }) {
             duration: 0.6,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
-          className="text-2xl text-pink-200 leading-relaxed"
+          className="text-2xl text-emerald-800 leading-relaxed"
         >
           {texts[currentText]}
         </motion.p>
@@ -57,7 +57,7 @@ export default function ApologyPage({ setCurrentPage }) {
 
       <motion.button
         onClick={handleContinue}
-        className="mt-10 px-8 py-4 bg-purple-500/20 border border-purple-300/30 rounded-full text-purple-200 text-lg hover:bg-purple-500/30 transition-all duration-300"
+        className="mt-10 px-8 py-4 bg-emerald-100 border border-emerald-200 rounded-full text-emerald-900 text-lg hover:bg-emerald-200 transition-all duration-300"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0 }}

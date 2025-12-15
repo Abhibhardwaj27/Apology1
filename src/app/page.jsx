@@ -7,22 +7,16 @@ import OpeningPage from "@/components/OpeningPage"
 import DiaryPage from "@/components/DiaryPage"
 import ApologyPage from "@/components/ApologyPage"
 import LetterPage from "@/components/LetterPage"
-import HugPage from "@/components/HugPage"
-import GiftPage from "@/components/GiftPage"
-import MusicPlayer from "@/components/MusicPlayer"
+// HugPage and GiftPage are kept in the project but no longer used in the main flow
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("opening")
-  const [musicPlaying, setMusicPlaying] = useState(false)
-  const [showMusicPlayer, setShowMusicPlayer] = useState(false)
 
   const pages = {
     opening: OpeningPage,
     diary: DiaryPage,
     apology: ApologyPage,
     letter: LetterPage,
-    hug: HugPage,
-    gift: GiftPage,
   }
 
   const CurrentComponent = pages[currentPage]
@@ -40,11 +34,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-emerald-50 relative overflow-hidden text-slate-800">
       <StarryBackground />
-
-      {/* Uncomment this if you want to add a background song */}
-      {showMusicPlayer && <MusicPlayer musicPlaying={musicPlaying} setMusicPlaying={setMusicPlaying} />}
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -58,9 +49,6 @@ export default function Home() {
         >
           <CurrentComponent
             setCurrentPage={setCurrentPage}
-            setMusicPlaying={setMusicPlaying}
-            setShowMusicPlayer={setShowMusicPlayer}
-            musicPlaying={musicPlaying}
           />
         </motion.div>
       </AnimatePresence>

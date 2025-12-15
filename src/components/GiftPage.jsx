@@ -50,7 +50,7 @@ export default function GiftPage() {
         initial={{ opacity: 0, }}
         animate={{ opacity: 1, }}
         transition={{ duration: 1 }}
-        className="text-3xl text-pink-300 mb-16"
+        className="text-3xl text-emerald-800 mb-16"
       >
         I have something special for you... 💝
       </motion.h2>
@@ -75,7 +75,7 @@ export default function GiftPage() {
               onClick={openGift}
             >
               {/* Cute glow around gift */}
-              <div className="absolute inset-0 w-56 h-56 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-full blur-xl scale-110 group-hover:scale-120 transition-transform duration-300"></div>
+              <div className="absolute inset-0 w-56 h-56 bg-gradient-to-r from-emerald-200/30 to-amber-100/40 rounded-full blur-xl scale-110 group-hover:scale-120 transition-transform duration-300"></div>
 
               <motion.img
                 src="/gifs/gift.gif"
@@ -96,9 +96,9 @@ export default function GiftPage() {
                 animate={{
                   y: [0, -3, 0],
                   textShadow: [
-                    "0 0 10px rgba(236, 72, 153, 0.5)",
-                    "0 0 20px rgba(236, 72, 153, 0.8)",
-                    "0 0 10px rgba(236, 72, 153, 0.5)",
+                    "0 0 10px rgba(52, 211, 153, 0.35)",
+                    "0 0 16px rgba(56, 189, 248, 0.35)",
+                    "0 0 10px rgba(52, 211, 153, 0.35)",
                   ],
                 }}
                 transition={{
@@ -107,7 +107,7 @@ export default function GiftPage() {
                   ease: "easeInOut",
                   delay: 2
                 }}
-                className="text-pink-200 mt-6 text-xl relative z-10"
+                className="text-emerald-800 mt-6 text-xl relative z-10"
               >
                 Click to open!🎁✨
               </motion.p>
@@ -142,7 +142,7 @@ export default function GiftPage() {
                 className="relative w-full h-full"
               >
                 {/* Beautiful aura around flower teddy */}
-                <div className="absolute w-64 h-64 mx-auto inset-0 bg-gradient-to-r from-pink-400/30 to-purple-400/30 rounded-full blur-2xl scale-110"></div>
+                <div className="absolute w-64 h-64 mx-auto inset-0 bg-gradient-to-r from-emerald-200/40 to-sky-200/40 rounded-full blur-2xl scale-110"></div>
 
                 <img
                   src="/gifs/teddy-giving-flower.gif"
@@ -193,7 +193,7 @@ export default function GiftPage() {
                       initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.3 }}
-                      className="text-2xl text-pink-300 leading-relaxed"
+                      className="text-2xl text-emerald-800 leading-relaxed"
                     >
                       This flower will never wilt...🌹
                     </motion.p>
@@ -201,7 +201,7 @@ export default function GiftPage() {
                       initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.6 }}
-                      className="text-lg text-purple-200 leading-relaxed"
+                      className="text-lg text-slate-700 leading-relaxed"
                     >
                       Just like my love for you. I promise to cherish you every single day, and never take your
                       beautiful heart for granted again.💖
@@ -210,7 +210,7 @@ export default function GiftPage() {
                       initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.9 }}
-                      className="text-xl text-pink-200"
+                      className="text-xl text-emerald-900"
                     >
                       You mean everything to me💕✨
                     </motion.p>

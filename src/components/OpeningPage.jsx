@@ -2,13 +2,9 @@
 
 import { motion } from "framer-motion"
 
-export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMusicPlayer }) {
+export default function OpeningPage({ setCurrentPage }) {
   const handleLetMeTalk = () => {
-    setMusicPlaying(true)
-    setShowMusicPlayer(true)
-    setTimeout(() => {
-      setCurrentPage("diary")
-    }, 500)
+    setCurrentPage("diary")
   }
 
   return (
@@ -50,7 +46,7 @@ export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMu
         className="mb-8 relative"
       >
         {/* Cute glow effect around teddy */}
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-purple-400/20 rounded-full blur-xl scale-110"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-200/30 to-sky-200/30 rounded-full blur-xl scale-110"></div>
         <img
           src="/gifs/teddy-walking.gif"
           className="w-64 h-64 mx-auto rounded-2xl relative z-10"
@@ -82,7 +78,7 @@ export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMu
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.3 }}
-          className="text-pink-200 text-xl leading-relaxed"
+          className="text-emerald-700 text-xl leading-relaxed"
         >
           It's late night… I've been walking for hours…
         </motion.p>
@@ -90,7 +86,7 @@ export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMu
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="text-purple-200 text-xl leading-relaxed"
+          className="text-sky-700 text-xl leading-relaxed"
         >
           I'm holding something heavy… not in hands, but in heart…
         </motion.p>
@@ -101,17 +97,17 @@ export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMu
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8, delay: 2, ease: [0.25, 0.46, 0.45, 0.94] }}
         onClick={handleLetMeTalk}
-        className="mt-12 px-10 py-4 bg-gradient-to-r from-pink-500/30 to-purple-500/30 backdrop-blur-sm border border-pink-300/40 rounded-full text-pink-100 text-xl hover:from-pink-500/40 hover:to-purple-500/40 transition-all duration-500 shadow-xl shadow-pink-500/30 relative overflow-hidden"
+        className="mt-12 px-10 py-4 bg-gradient-to-r from-emerald-200 to-sky-200 backdrop-blur-sm border border-emerald-300/70 rounded-full text-emerald-900 text-xl hover:from-emerald-300 hover:to-sky-300 transition-all duration-400 shadow-lg shadow-emerald-100 relative overflow-hidden"
         whileHover={{
           scale: 1.03,
-          boxShadow: "0 0 35px rgba(236, 72, 153, 0.4)",
+          boxShadow: "0 0 28px rgba(16, 185, 129, 0.35)",
           y: -2,
         }}
         whileTap={{ scale: 0.97 }}
       >
         {/* Cute sparkle effect */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent"
           animate={{
             x: ["-100%", "100%"],
           }}

@@ -23,7 +23,7 @@ export default function DiaryPage({ setCurrentPage }) {
         initial={{ rotateY: -90, opacity: 0 }}
         animate={{ rotateY: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm border border-pink-300/20 rounded-lg p-8 max-w-md w-full shadow-2xl"
+        className="bg-white/85 backdrop-blur-sm border border-emerald-200/70 rounded-lg p-8 max-w-md w-full shadow-xl shadow-emerald-100"
         style={{ perspective: "1000px" }}
       >
         <motion.div
@@ -32,7 +32,7 @@ export default function DiaryPage({ setCurrentPage }) {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-center"
         >
-          <h1 className="text-3xl text-pink-300 mb-8 leading-relaxed">My Sorry Letter to You…</h1>
+          <h1 className="text-3xl text-emerald-800 mb-8 leading-relaxed">My Sorry Letter to You…</h1>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,13 +52,13 @@ export default function DiaryPage({ setCurrentPage }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.5 }}
           >
-            <p className="text-purple-200 text-lg mb-8 leading-relaxed">
+            <p className="text-slate-700 text-lg mb-8 leading-relaxed">
               I've been sitting here for hours, trying to find the right words...
             </p>
 
             <motion.button
               onClick={handleContinue}
-              className="px-6 py-3 bg-pink-500/20 border border-pink-300/30 rounded-full text-pink-200 hover:bg-pink-500/30 transition-all duration-300"
+              className="px-6 py-3 bg-emerald-100 border border-emerald-200 rounded-full text-emerald-900 hover:bg-emerald-200 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0 }}
